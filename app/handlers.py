@@ -3,9 +3,9 @@ from aiogram.types import InlineKeyboardButton,InlineKeyboardMarkup,Message,Call
 from aiogram.filters import CommandStart,Command
 
 import csv
-from DatabaseBot.config import ADMIN_ID,TOKEN
+from config import ADMIN_ID,TOKEN
 import os
-from DatabaseBot.database import SessionLocal, User, BroadCast
+from database import SessionLocal, User, BroadCast
 from datetime import datetime
 
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
