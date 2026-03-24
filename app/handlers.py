@@ -388,7 +388,8 @@ async def search_phoned(message:Message,state:FSMContext):
     rostov_phone = search_by_phone(telephone, "database-telephone.csv")
     ekatirin_phone = search_by_phone(telephone, "ekaterinburg-73519010045-79999998055.csv") 
     novosib_phone = search_by_phone(telephone, "novosibirsk-79000002442-79999984356.csv") 
-    await message.answer(f"{getting_phone}\n{get_piter_phone}\n{rostov_phone}\n{ekatirin_phone}\n{novosib_phone}", parse_mode='HTML',
+    samara = search_by_phone(telephone, "samara-79000229999-79999999021.csv" ) 
+    await message.answer(f"{getting_phone}\n{get_piter_phone}\n{rostov_phone}\n{ekatirin_phone}\n{novosib_phone}\{samara}", parse_mode='HTML',
                          reply_markup=keyboard)
     await state.clear()
 
