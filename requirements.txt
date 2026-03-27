@@ -15,6 +15,7 @@ requests==2.32.3
 requests-file==2.1.0
 six==1.17.0
 SQLAlchemy==2.0.43
+Telethon==1.40.0
 
 
 
