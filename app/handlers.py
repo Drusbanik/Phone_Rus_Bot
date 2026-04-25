@@ -174,7 +174,7 @@ def admin_main_menu():
         [InlineKeyboardButton(text="📊‍ Статистика", callback_data='stats')],
         [InlineKeyboardButton(text='✉️ Рассылка', callback_data='broadcast')],
         [InlineKeyboardButton(text='⚙️ Доп настройки', callback_data='settings')],
-        [InlineKeyboardButton(text='👤 User Пользователей',callback_data='users_data')]
+        [InlineKeyboardButton(text='👤 Пользователей',callback_data='users_data')]
     ])
     return keyboard
 
